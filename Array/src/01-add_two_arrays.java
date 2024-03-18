@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class Add_Two_Arrays{
+class Add_Two_Arrays{
 
     // Adding array1 & array 2
-    public static int[] calSum(int[] a1, int[] a2, int n, int m)
+    static int[] calSum(int[] a1, int[] a2, int n, int m)
     {
 
         // new array size
