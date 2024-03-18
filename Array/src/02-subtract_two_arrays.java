@@ -15,7 +15,7 @@ class Subtract_Two_Arrays {
         int[] res = subtract(a1, a2);
         for (int i : res) System.out.println(i);
     }
-    static int[] subtract(int[] a1, int[] a2) {
+     static int[] subtract(int[] a1, int[] a2) {
         // swap arrays (swapping allowed. a1 - a2 || a2 - a1 same result)
         if (a1.length < a2.length) {
             int[] temp = a1;
