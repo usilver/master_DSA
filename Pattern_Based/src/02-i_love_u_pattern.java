@@ -20,29 +20,37 @@ class I_Love_You {
     public static void propose(int[] arr) {
         int max = maxElement(arr);
         int min = minElement(arr);
+        int current_number_of_line = max;
+        int current_line_below_zero = min;
 
         // when integers are positive print above x-axis
-        for (int i = max; i > 0; i--) {
-            for (int ele : arr) {
-                if (i <= ele) {
+        while (current_number_of_line > 0) {
+            for (int pos = 0; pos < arr.length; pos++) {
+                int pos_height = arr[pos];
+                if (current_number_of_line <= pos_height) {
                     System.out.print("* ");
                 } else {
                     System.out.print("  ");
                 }
             }
+
+            // prepare for next line
             System.out.println();
+            current_number_of_line--;
         }
 
         // when integers are negative print below x-axis
-        for (int k = min; k < 0; k++) {
-            for (int ele : arr) {
-                if (k >= ele) {
+        while (current_line_below_zero < 0) {
+            for (int pos = 0; pos < arr.length; pos++) {
+                int pos_height = arr[pos];
+                if (current_line_below_zero >= pos_height) {
                     System.out.print("* ");
                 } else {
                     System.out.print("  ");
                 }
             }
             System.out.println();
+            current_line_below_zero++;
         }
     }
 
