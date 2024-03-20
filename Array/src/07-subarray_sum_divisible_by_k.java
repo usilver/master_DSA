@@ -17,7 +17,7 @@ import java.util.*;
 
 class SubArray_Sum_Divisible_By_k {
 
-    public static int subArrayDivisibleByK(int[] arr, int n, int k){
+    static int subArrayDivisibleByK(int[] arr, int n, int k){
         int ans = 0;
         for(int sp = 0; sp < n ; sp++){
             for(int ep = sp; ep < n; ep++){
@@ -25,14 +25,14 @@ class SubArray_Sum_Divisible_By_k {
                 // check if array from sp to ep is divisible by k
                 boolean isDivisible = subArraySumDivisibleByK(arr, sp, ep, k);
 
-                if(isDivisible == true){
+                if(isDivisible){
                     ans++;
                 }
             }
         }
         return ans;
     }
-    public static boolean subArraySumDivisibleByK(int[] arr, int sp, int ep, int k){
+    static boolean subArraySumDivisibleByK(int[] arr, int sp, int ep, int k){
         int sum = 0;
 
         int i = sp;
@@ -46,7 +46,7 @@ class SubArray_Sum_Divisible_By_k {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int k=sc.nextInt();
-        int arr[]=new int[n];
+        int[] arr =new int[n];
         for(int i=0;i<n;++i){
             arr[i]=sc.nextInt();
         }
