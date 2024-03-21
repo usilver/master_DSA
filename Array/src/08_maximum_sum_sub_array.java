@@ -34,7 +34,8 @@ class Maximum_Sum_SubArray {
 
         // What is the starting and ending index of max subArray?
         int sp = 0; // staring index point
-        int ep = 0; // ending index point
+        int ep = -1; // ending index point
+        int csp = 0; // current starting index point
 
         // kadane's algorithm
         for(int i = 0; i < a.length; i++){
@@ -43,13 +44,14 @@ class Maximum_Sum_SubArray {
             // update current_sum and sp when current_sum value becomes lesser than 0.
             if(csum < 0){
                 csum = 0;
-                sp = i + 1;
+                csp = i + 1;
             }
 
             // update max_sum and ep when max_sum becomes lesser than current sum.
             if(max_sum < csum){
                 max_sum = csum;
                 ep = i;
+                sp = csp;
             }
         }
         System.out.println("sp: " + sp + " | ep: " + ep);
