@@ -1,3 +1,4 @@
+/* Brute Force | O(n^2) | */
 import java.util.Scanner;
 
 class Max_SubArray_K_Length {
