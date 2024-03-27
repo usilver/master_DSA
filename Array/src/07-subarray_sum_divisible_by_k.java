@@ -11,6 +11,8 @@ The second line contains n spaced integers.
 
 Output Format
 Print count of subArrays divisible by k
+*
+* Brute Force | O(n^3) |
 * */
 
 import java.util.*;
