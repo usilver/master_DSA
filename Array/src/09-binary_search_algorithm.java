@@ -1,3 +1,4 @@
+/*Binary Search Algo | O(n) |*/
 import java.util.*;
 
 class Binary_Search_Algorithm {
