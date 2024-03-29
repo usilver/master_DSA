@@ -1,20 +1,3 @@
-/*
-* Given an integer array numbs and an integer k, print the number of non-empty subArrays that have a sum divisible by k.
-
-A subArray is a contiguous part of an array.
-
-Input Format
-Input consists of two lines.
-
-The first line contains two integers n (size of the array) and k.
-The second line contains n spaced integers.
-
-Output Format
-Print count of subArrays divisible by k
-*
-* Brute Force | O(n^3) |
-* */
-
 import java.util.*;
 
 class SubArray_Sum_Divisible_By_k {
@@ -57,3 +40,20 @@ class SubArray_Sum_Divisible_By_k {
         System.out.println('\n');
     }
 }
+
+/*
+Given an integer array numbs and an integer k, print the number of non-empty subArrays that have a sum divisible by k.
+
+A subArray is a contiguous part of an array.
+
+Input Format
+Input consists of two lines.
+
+The first line contains two integers n (size of the array) and k.
+The second line contains n spaced integers.
+
+Output Format
+Print count of subArrays divisible by k
+
+Brute Force | O(n^3) |
+*/
