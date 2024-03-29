@@ -1,7 +1,3 @@
-/*
-    Sliding Window Technique | O(n) |
- */
-
 import java.util.Scanner;
 
 class Max_Sub_Array_K_Length {
@@ -39,3 +35,7 @@ class Max_Sub_Array_K_Length {
         System.out.print(max_sum);
     }
 }
+
+/*
+    Sliding Window Technique | O(n) |
+ */
