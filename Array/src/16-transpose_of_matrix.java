@@ -44,6 +44,7 @@ class Transpose_Of_Matrix {
                 arr[i][j] = sc.nextInt();
             }
         }
+        sc.close();
 
         int[][] transpose_of_arr = transposeOfMatrix(arr, n, m);
 //        int[][] transpose_of_arr = transposeMatrix(arr, n, m);
@@ -60,7 +61,7 @@ class Transpose_Of_Matrix {
 /* Write a program to find the transpose of a square matrix of size N*N.
  Transpose of a matrix is obtained by changing rows to columns and columns to rows.
 
-Expected Time Complexity: O(N * N)
+Expected Time Complexity: | O(N * N) |
 
 Expected Space Complexity: In place
 
