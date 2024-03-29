@@ -62,6 +62,7 @@ class Transpose_Of_Matrix {
  Transpose of a matrix is obtained by changing rows to columns and columns to rows.
 
 Expected Time Complexity: | O(N * N) |
+We use transpose function to convert nth row into nth column.
 
 Expected Space Complexity: In place
 
