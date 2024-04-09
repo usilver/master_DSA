@@ -1,25 +1,6 @@
 import java.util.Scanner;
 
 class Max_Integer {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        // array
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-
-        for(int i = 0; i < n; i++){
-            arr[i] = sc.nextInt();
-        }
-
-        // max integer
-        int maxElement1st = maxElement1st(arr, n);
-        int maxElement2nd = maxElement2nd(arr, n);
-        int maxElement3rd = maxElement3rd(arr, n);
-        System.out.println(maxElement1st);
-        System.out.println(maxElement2nd);
-        System.out.println(maxElement3rd);
-    }
 
     // first method
     static int maxElement1st(int[] array, int n){
@@ -58,5 +39,27 @@ class Max_Integer {
             }
         }
         return max;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // array
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        for(int i = 0; i < n; i++){
+            arr[i] = sc.nextInt();
+        }
+
+        // max integer
+        int maxElement1st = maxElement1st(arr, n);
+        int maxElement2nd = maxElement2nd(arr, n);
+        int maxElement3rd = maxElement3rd(arr, n);
+
+        System.out.println(maxElement1st);
+        System.out.println(maxElement2nd);
+        System.out.println(maxElement3rd);
     }
 }
