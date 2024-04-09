@@ -1,21 +1,9 @@
 import java.util.Scanner;
 
 class Subtract_Two_Arrays {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n1 = sc.nextInt();
-        int[] a1 = new int[n1];
-        for (int i = 0; i < n1; i++) a1[i] = sc.nextInt();
 
-        int n2 = sc.nextInt();
-        int[] a2 = new int[n2];
-        for (int i = 0; i < n2; i++) a2[i] = sc.nextInt();
-        sc.close();
-
-        int[] res = subtract(a1, a2);
-        for (int i : res) System.out.println(i);
-    }
      static int[] subtract(int[] a1, int[] a2) {
+         
         // swap arrays (swapping allowed. a1 - a2 || a2 - a1 same result)
         if (a1.length < a2.length) {
             int[] temp = a1;
@@ -56,5 +44,20 @@ class Subtract_Two_Arrays {
             k--;
         }
         return res;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n1 = sc.nextInt();
+        int[] a1 = new int[n1];
+        for (int i = 0; i < n1; i++) a1[i] = sc.nextInt();
+
+        int n2 = sc.nextInt();
+        int[] a2 = new int[n2];
+        for (int i = 0; i < n2; i++) a2[i] = sc.nextInt();
+        sc.close();
+
+        int[] res = subtract(a1, a2);
+        for (int i : res) System.out.println(i);
     }
 }
