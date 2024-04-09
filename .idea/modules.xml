@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Pattern_Based/01-pattern_based.iml" filepath="$PROJECT_DIR$/Pattern_Based/01-pattern_based.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Array/02-array.iml" filepath="$PROJECT_DIR$/Array/02-array.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Pattern_Based/_05_Recursion/_05_Recursion.iml" filepath="$PROJECT_DIR$/Pattern_Based/_05_Recursion/_05_Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-Pattern_Based/01-Pattern_Based.iml" filepath="$PROJECT_DIR$/01-Pattern_Based/01-Pattern_Based.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-Array/02-Array.iml" filepath="$PROJECT_DIR$/02-Array/02-Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-Pattern_Based/_02-Recursion/_02-Recursion.iml" filepath="$PROJECT_DIR$/01-Pattern_Based/_02-Recursion/_02-Recursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/master_DSA.iml" filepath="$PROJECT_DIR$/master_DSA.iml" />
     </modules>
   </component>
