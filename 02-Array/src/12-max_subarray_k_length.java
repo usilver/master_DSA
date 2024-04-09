@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 class Max_Sub_Array_K_Length {
     static int maxSum(int[] arr, int k){
+
         int max_sum = Integer.MIN_VALUE;
         int w_sum = 0; // window sum
 
@@ -17,11 +18,15 @@ class Max_Sub_Array_K_Length {
         return max_sum;
     }
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Please enter the size of an array: ");
         int n = sc.nextInt();
+
         System.out.print("Please enter the size of a subArray: ");
         int k = sc.nextInt();
+
         int[] arr = new int[n];
 
         // array elements
@@ -32,6 +37,7 @@ class Max_Sub_Array_K_Length {
         sc.close();
 
         int max_sum = maxSum(arr, k);
+
         System.out.print(max_sum);
     }
 }
