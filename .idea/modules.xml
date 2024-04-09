@@ -4,7 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01-Pattern_Based/01-Pattern_Based.iml" filepath="$PROJECT_DIR$/01-Pattern_Based/01-Pattern_Based.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-Array/02-Array.iml" filepath="$PROJECT_DIR$/02-Array/02-Array.iml" />
-      <module fileurl="file://$PROJECT_DIR$/01-Pattern_Based/_02-Recursion/_02-Recursion.iml" filepath="$PROJECT_DIR$/01-Pattern_Based/_02-Recursion/_02-Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-Array_2D/03-Array_2D.iml" filepath="$PROJECT_DIR$/03-Array_2D/03-Array_2D.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-ArrayList/04-ArrayList.iml" filepath="$PROJECT_DIR$/04-ArrayList/04-ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-Recursion/06-Recursion.iml" filepath="$PROJECT_DIR$/06-Recursion/06-Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String/String.iml" filepath="$PROJECT_DIR$/String/String.iml" />
       <module fileurl="file://$PROJECT_DIR$/master_DSA.iml" filepath="$PROJECT_DIR$/master_DSA.iml" />
     </modules>
   </component>
