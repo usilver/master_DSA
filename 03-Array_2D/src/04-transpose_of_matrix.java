@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 class Transpose_Of_Matrix {
     static int[][] transposeOfMatrix(int[][] arr, int n, int m){
+
         // best method
         for(int i = 0; i < n; i++){
             for (int j = i; j < arr[i].length; j++){
@@ -14,6 +15,7 @@ class Transpose_Of_Matrix {
     }
 
     static int[][] transposeMatrix(int[][] arr, int n, int m) {
+
         // easy method
         int[][] myArr = new int[n][m];
         for (int i = 0; i < n; i++) {
@@ -23,15 +25,20 @@ class Transpose_Of_Matrix {
         }
         return myArr;
     }
+
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Please enter the size of Integer 2D Array: ");
         int n = sc.nextInt();
+
         System.out.print("Please enter the size of an Integer Array: ");
         int m = sc.nextInt();
 
         if (m < n){
             System.out.println("Size of an Integer Array must be equal to 2D Array!");
+
             System.out.print("Please enter the size of an Integer Array: ");
             m = sc.nextInt();
         }
@@ -58,7 +65,8 @@ class Transpose_Of_Matrix {
     }
 }
 
-/* Write a program to find the transpose of a square matrix of size N*N.
+/*
+Write a program to find the transpose of a square matrix of size N*N.
  Transpose of a matrix is obtained by changing rows to columns and columns to rows.
 
 Expected Time Complexity: | O(N * N) |
