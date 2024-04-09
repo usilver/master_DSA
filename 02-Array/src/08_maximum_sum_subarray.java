@@ -3,6 +3,7 @@ import java.util.*;
 class Maximum_Sum_SubArray {
 
     static int maxSubArraySum(int[] a) {
+
         int max_sum = 0;
         int csum = 0; // current_sum
 
@@ -33,6 +34,7 @@ class Maximum_Sum_SubArray {
     }
 
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
@@ -46,7 +48,7 @@ class Maximum_Sum_SubArray {
 }
 
 /*
-* Given an array arr of size N. The task is to find the sum of the contiguous subArray within an array with the largest sum.
+Given an array arr of size N. The task is to find the sum of the contiguous subArray within an array with the largest sum.
 
 Input Format
 First line consists of an integer n
@@ -62,7 +64,7 @@ Input:
 2 3 1 -1 0
 Output:
 6
-*
+
 Kadane's algo | O(n) |
-* */
+*/
 
