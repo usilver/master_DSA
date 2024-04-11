@@ -2,6 +2,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 class SpecialMatrix {
+
+    // Time Complexity O(n*n)
     static boolean special(int[][] matrix, int n){
 
         // Matrix Traversal | i == j --> Diagonal Elements |
@@ -16,6 +18,36 @@ class SpecialMatrix {
                     if(matrix[i][j] != 0) return false;
                 }
             }
+        }
+        return true;
+    }
+
+    // // Time Complexity O(n)
+    static boolean special2(int[][] matrix, int n){
+
+        // Diagonal Traversal
+        int row = 0;
+        int col = 0;
+
+        while (row < n && col < n){
+            if (matrix[row][col] == 0){
+                return  false;
+            }
+
+            row++;
+            col++;
+        }
+
+        // Anti-diagonal Traversal
+        row = 0;
+        col = n - 1;
+
+        while (row < n && col >= 0){
+            if (matrix[row][col] != 0){
+                return false;
+            }
+            row++;
+            col--;
         }
         return true;
     }
@@ -35,7 +67,9 @@ class MatrixTraversal{
             }
             SpecialMatrix ob = new SpecialMatrix();
             boolean ans = SpecialMatrix.special(matrix, n);
+            boolean ans2 = SpecialMatrix.special2(matrix, n);
             System.out.println(ans);
+            System.out.println(ans2);
         }
     }
 }
