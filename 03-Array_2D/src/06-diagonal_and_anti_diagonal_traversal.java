@@ -75,6 +75,7 @@ class MatrixTraversal{
 }
 
 /*
+Level: Easy
 Special Matrix
 A square matrix is called special matrix if all the non-diagonal elements
 of the matrix are zero and the diagonal elements are non-zero.
