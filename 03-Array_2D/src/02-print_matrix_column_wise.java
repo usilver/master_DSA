@@ -1,6 +1,13 @@
 import java.util.Scanner;
 class PrintMatrixColumnWise {
     public void printMatrixColumnWise(int[][] mat, int n, int m) {
+        /*
+           ⬇️{1, 2, 3, 4},
+           ⬇️{5, 6, 7, 8},
+           ⬇️{9, 6, 3, 1},
+           ⬇️{2, 4, 6, 8},
+        */
+
         // col elements
         for(int j = 0; j < m; j++){
             for(int i = 0; i < n; i++){
