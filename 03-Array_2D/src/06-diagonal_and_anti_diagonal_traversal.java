@@ -2,8 +2,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 class SpecialMatrix {
-
-    // Time Complexity O(n*n)
     static boolean special(int[][] matrix, int n){
 
         // Matrix Traversal | i == j --> Diagonal Elements |
@@ -56,18 +54,24 @@ class SpecialMatrix {
 class MatrixTraversal{
     public static void main(String[] args)throws IOException{
         Scanner sc = new Scanner(System.in);
+        System.out.print("Please enter number of test cases: ");
         int t = sc.nextInt();
         while(t-- > 0){
+            System.out.print("Please enter length of row and column: ");
             int n = sc.nextInt();
             int[][] matrix = new int[n][n];
 
-            for(int i = 0; i < n; i++){
-                for(int j = 0; j < n; j++)
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                    System.out.print("[" + i + "][" + j + "] : ");
                     matrix[i][j] = sc.nextInt();
+                }
             }
+
             SpecialMatrix ob = new SpecialMatrix();
             boolean ans = SpecialMatrix.special(matrix, n);
             boolean ans2 = SpecialMatrix.special2(matrix, n);
+
             System.out.println(ans);
             System.out.println(ans2);
         }
@@ -75,8 +79,10 @@ class MatrixTraversal{
 }
 
 /*
-Level: Easy
+Level: Easy | Time Complexity: 1. O(n*n) 2. O(n) |
+
 Special Matrix
+
 A square matrix is called special matrix if all the non-diagonal elements
 of the matrix are zero and the diagonal elements are non-zero.
 
