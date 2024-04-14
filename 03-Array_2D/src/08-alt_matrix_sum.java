@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class AltMatrixSum {
     public static void alternateMatrixSum(int [][]mat, int n) {
-
+    
         int black = 0;
         int white = 0;
 
@@ -23,7 +23,7 @@ class AltMatrixSum {
                 }
             }
         }
-
+        
         System.out.println(black);
         System.out.print(white);
     }
