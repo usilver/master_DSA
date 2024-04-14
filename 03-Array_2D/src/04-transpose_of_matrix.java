@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class Transpose_Of_Matrix {
     static int[][] transposeOfMatrix(int[][] arr, int n, int m){
 
@@ -66,6 +65,8 @@ class Transpose_Of_Matrix {
 }
 
 /*
+Level: Easy
+
 Write a program to find the transpose of a square matrix of size N*N.
  Transpose of a matrix is obtained by changing rows to columns and columns to rows.
 
