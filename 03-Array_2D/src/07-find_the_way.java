@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class FindTheWay {
     public static int[] findTheWay(int[][] matrix) {
-
+        
         int n = matrix.length;
         int m = matrix[0].length;
 
@@ -33,7 +33,6 @@ class FindTheWay {
 
         return new int[]{row, col};
     }
-    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int m, n;
@@ -49,9 +48,9 @@ class FindTheWay {
                 matrix[i][j] = sc.nextInt();
             }
         }
-
+        
         int[] result = findTheWay(matrix);
-
+        
         for (int i = 0; i < result.length; i++) {
             System.out.print(result[i] + " ");
         }
@@ -62,10 +61,10 @@ class FindTheWay {
 
 /*
 Level: Easy | Time Complexity: O(n) |
-
+ 
 Find The Way
 
-You are given a binary matrix of dimensions m*n. A mouse enters the matrix at cell (0,0) in left to
+You are given a binary matrix of dimensions m*n. A mouse enters the matrix at cell (0,0) in left to 
 right direction.
 
 He goes in the same direction if he encounters a 0, and he takes a right turn when he encounters a 1,
