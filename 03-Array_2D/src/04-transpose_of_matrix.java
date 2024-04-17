@@ -29,37 +29,70 @@ class Transpose_Of_Matrix {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Please enter the size of Integer 2D Array: ");
+        System.out.print("Number of Rows: ");
         int n = sc.nextInt();
 
-        System.out.print("Please enter the size of an Integer Array: ");
+        System.out.print("Number of Columns: ");
         int m = sc.nextInt();
 
-        if (m < n){
-            System.out.println("Size of an Integer Array must be equal to 2D Array!");
+        if (m != n){
+            System.out.println("Number of Rows and Columns must be equal!");
 
-            System.out.print("Please enter the size of an Integer Array: ");
+            System.out.print("Number of Columns: ");
             m = sc.nextInt();
+
+            if(m != n){
+                System.out.print("You are an idiot! drink milk now! Face error! Bye!");
+                sc.close();
+            }
         }
 
         int[][] arr = new int[n][m];
 
         for (int i = 0; i < n; i++){
             for (int j = 0; j < m; j++){
+                if (n != m){
+                    System.out.println();
+                    break;
+                }
                 System.out.print("Please enter integer [" + (i + 1) + "][" + (j+1) + "]: ");
                 arr[i][j] = sc.nextInt();
             }
         }
         sc.close();
 
+        for(int i = 0; i < n; i++){
+            System.out.print("= ");
+        }
+        System.out.println();
+
+        // user matrix
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                int ele = arr[i][j];
+                System.out.print(ele + " ");
+            }
+            System.out.println();
+        }
+
+        for(int i = 0; i < n; i++){
+                System.out.print("= ");
+        }
+        System.out.println();
+
         int[][] transpose_of_arr = transposeOfMatrix(arr, n, m);
 //        int[][] transpose_of_arr = transposeMatrix(arr, n, m);
 
+        // transpose of matrix
         for (int[] array: transpose_of_arr){
             for (int ele: array){
                 System.out.print(ele + " ");
             }
             System.out.println();
+        }
+
+        for(int i = 0; i < n; i++){
+            System.out.print("= ");
         }
     }
 }
