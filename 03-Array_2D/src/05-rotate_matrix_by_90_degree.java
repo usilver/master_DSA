@@ -1,15 +1,16 @@
 import java.util.Scanner;
-class Rotate_Matrix_By_90_Degree {
+class
+Rotate_Matrix_By_90_Degree {
 
     static int[][] rotateMatrixBy90(int[][] arr, int n){
 
-        // call transpose function to change nth row into nth column.
+        // call transpose function to change nth col into nth row.
         transposeMatrix(arr, n);
 
         for(int i = 0; i < n; i++){
             int[] int_arr = arr[i];
 
-            // reverse integer array to rotate by 90 degree.
+            // reverse integer array in each row of 2-D Matrix to rotate 2-D Matrix by 90 degree.
             reverseArray(int_arr);
         }
         return arr;
@@ -39,7 +40,7 @@ class Rotate_Matrix_By_90_Degree {
 
     static void swap(int[] int_arr, int start, int end){
 
-        // copying original values before swapping
+        // copy original values before swapping
         int value_at_start = int_arr[start];
         int value_at_end = int_arr[end];
 
@@ -58,25 +59,48 @@ class Rotate_Matrix_By_90_Degree {
         System.out.print("Please enter the size of an Integer Array: ");
         int m = sc.nextInt();
 
-        if (m < n){
+        if (m != n){
             System.out.println("Size of an Integer Array must be equal to 2D Array!");
 
             System.out.print("Please enter the size of an Integer Array: ");
             m = sc.nextInt();
+
+            if(n != m){
+                System.out.println("You are so dumb! drink water and fix error!");
+            }
         }
 
         int[][] arr = new int[n][m];
 
         for (int i = 0; i < n; i++){
             for (int j = 0; j < m; j++){
+                if(n != m){
+                    break;
+                }
                 System.out.print("Please enter integer [" + (i + 1) + "][" + (j+1) + "]: ");
                 arr[i][j] = sc.nextInt();
             }
         }
         sc.close();
 
+        // matrix
+        System.out.println("Input: ");
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                int ele = arr[i][j];
+                System.out.print(ele + " ");
+            }
+            System.out.println();
+        }
+        for(int i = 0; i < n; i++){
+            System.out.print("= ");
+        }
+        System.out.println();
+
         int[][] arr_rotated_by_90 = rotateMatrixBy90(arr, n);
 
+        // output: rotated by 90
+        System.out.println("Output: ");
         for (int[] array: arr_rotated_by_90){
             for (int ele: array){
                 System.out.print(ele + " ");
