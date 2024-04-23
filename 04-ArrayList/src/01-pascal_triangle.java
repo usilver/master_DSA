@@ -4,13 +4,13 @@ import java.util.Scanner;
 class PascalTriangle {
     public static ArrayList<ArrayList<Integer>> pascalTriangle(int numRows) {
 
-        ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+        ArrayList<ArrayList<Integer>> ans = new ArrayList<>(); // {{empty}}
 
-        ArrayList<Integer> past = new ArrayList<>(); // {}
+        ArrayList<Integer> past = new ArrayList<>(); // {empty}
         past.add(1); // {1}
         ans.add(past); // {{1}}
 
-        // {empty al} --> we add 1 in beginning --> {1}
+        // {{empty ans al}} --> we add 1 in beginning --> {{1} so now we have to add (n-1) more rows}
         int total_number_of_line = numRows - 1;
 
         while(total_number_of_line > 0){
