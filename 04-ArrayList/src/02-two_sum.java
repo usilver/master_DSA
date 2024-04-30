@@ -57,17 +57,53 @@ class TwoSum {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 1, 2, 2, 5, 10,13, 13, 14, 14, 15, 17};
+
+        int[] arr = {1, 2, 5, 10, 13, 14, 15, 17};
+
+        // printing arr
+        for (int i = 0; i < arr.length; i++) {
+            if(i == 0){
+                System.out.print("[");
+            }
+
+            if (i != arr.length - 1) {
+                System.out.print(arr[i] + ", ");
+            }else {
+                System.out.print(arr[i]);
+            }
+
+            if (i == arr.length - 1){
+                System.out.print("]");
+            }
+        }
+        System.out.println();
+
         int target = 15;
 
-        ArrayList<ArrayList<Integer>> element_pairs_sum_equal_to_target = twoSum(arr, target);
+        ArrayList<ArrayList<Integer>> twoSumPairs = twoSum(arr, target);
 
-        for (int i = 0; i < element_pairs_sum_equal_to_target.size(); i++) {
-            for (int j = 0; j < element_pairs_sum_equal_to_target.get(i).size(); j++) {
-                int pair = element_pairs_sum_equal_to_target.get(i).get(j);
-                System.out.print(pair + " ");
+        // printing twoSumPairs
+        for (int i = 0; i < twoSumPairs.size(); i++) {
+            if (i != 0) {
+                System.out.print("[");
+            } else {
+                System.out.print("[[");
             }
-            System.out.println();
+
+            for (int j = 0; j < twoSumPairs.get(i).size(); j++) {
+                int pair = twoSumPairs.get(i).get(j);
+                if (j != (twoSumPairs.get(i).size() - 1)) {
+                    System.out.print(pair + ", ");
+                }else {
+                    System.out.print(pair);
+                }
+            }
+
+            if (i != twoSumPairs.size() - 1) {
+                System.out.print("], ");
+            } else {
+                System.out.print("]]");
+            }
         }
     }
 }
